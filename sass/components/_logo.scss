@@ -1,0 +1,22 @@
+.logo {
+  font-family: $font-logo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $aсcent-text-color;
+  transition: transform 1000ms;
+
+  &__part {
+    color: #000000;
+  }
+
+  &__part--white {
+    color: $secondary-text-color;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+}

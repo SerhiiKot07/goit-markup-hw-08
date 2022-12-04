@@ -1,0 +1,32 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  border-radius: 50%;
+  transition: color $anim, background-color $anim;
+}
+
+.social-list__link--footer {
+  color: $secondary-text-color;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  color: $secondary-text-color;
+  background-color: $aсcent-text-color;
+}
+
+.social-list__icon {
+  fill: currentColor;
+}
