@@ -3,11 +3,11 @@
 @import './utils/visually-hidden';
 @import './utils/mixins';
 
-@import './base/normalize';
+// @import './base/normalize';
 @import './base/base';
 @import './base/reset';
 @import './base/card-set';
-@import './base/animations';
+// @import './base/animations';
 
 @import './components/section';
 @import './components/container';
@@ -26,3 +26,4 @@
 @import './components/btn-portfolio';
 @import './components/projects';
 @import './components/projects-overlay';
+@import './components/menu';
