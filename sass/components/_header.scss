@@ -17,13 +17,17 @@
 
 .header-nav__list {
   display: none;
-  // display: flex;
-  // font-weight: 500;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
-  // color: $primary-text-color;
-  // margin-left: 93px;
-  // gap: 50px;
+
+  @media screen and (min-width: 768px) {
+   
+  display: flex;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  margin-left: 93px;
+  gap: 50px;
+  }
 }
 
 .header-nav__link {
@@ -73,20 +77,41 @@
 
 .header-contacts__list {
   display: none;
-  // display: flex;
-  // margin-left: auto;
-  // gap: 30px;
+  margin-left: auto;
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 1.17;
 }
 
-.header-contacts__link {
-  display: flex;
-  align-items: center;
-  padding: 32px 0;
-  gap: 10px;
-  color: $paragraf-text-color;
-  font-weight: 500;
+@media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+    }
 }
+
+
+.header-contacts__link {
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $paragraf-text-color;
+    font-weight: 500;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
+    gap: 10px;
+  }
+  
+ }
 
 .header-contacts__icon {
   fill: currentColor;
+
 }
