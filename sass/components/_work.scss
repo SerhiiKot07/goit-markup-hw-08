@@ -1,10 +1,18 @@
 .section--work {
+  display: none;
   @extend %section;
   padding-top: 0;
+
+  @media screen and (min-width: 1200px) {
+    display: inline;
+  }
 }
-.work-list {
-  display: flex;
-}
+
+// .work-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: $indent;
+// }
 
 .work-list__item {
   position: relative;

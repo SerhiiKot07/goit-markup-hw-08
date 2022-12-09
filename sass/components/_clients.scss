@@ -1,19 +1,30 @@
 .clients-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
+
+
 
 .client-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #afb1b8;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: color $anim, border-color $anim;
+
+  @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 
   &:hover,
   &:focus {
