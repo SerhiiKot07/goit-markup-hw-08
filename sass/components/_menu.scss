@@ -59,12 +59,12 @@
   background-color: $secondary-text-color;
   z-index: 999;
 
-  transform: translateY(100%);
+  transform: translateX(100%);
   transition: transform $anim;
 }
 
 .menu-container.is-open {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .menu-container .menu-toggle {
