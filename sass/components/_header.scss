@@ -57,20 +57,22 @@
 
   &--current {
     color: $aсcent-text-color;
-
+    
     &::after {
-      content: '';
-      display: block;
-      width: 108%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: $aсcent-text-color;
-      position: absolute;
-      left: 50%;
-      bottom: -2%;
-      transform: translateX(-50%) scaleX(1);
-      opacity: 1;
-      @include transition(transform, opacity);
+      @media screen and (min-width: 768px) {
+        content: '';
+        display: block;
+        width: 108%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $aсcent-text-color;
+        position: absolute;
+        left: 50%;
+        bottom: -2%;
+        transform: translateX(-50%) scaleX(1);
+        opacity: 1;
+        @include transition(transform, opacity);
+      }
     }
   }
 }
