@@ -449,6 +449,12 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
 }
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 100%;
+    min-height: 581px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;

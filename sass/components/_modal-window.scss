@@ -29,6 +29,11 @@
   @include transition(transform, opacity);
   padding: 40px;
 
+    @media screen and (max-width: 480px) {
+        width: 100%;
+        min-height: 581px;
+      }
+
   @media screen and (min-width: 1200px) {
     width: 528px;
     min-height: 581px;
