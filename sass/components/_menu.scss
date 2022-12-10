@@ -49,16 +49,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  
+
   width: 100vw;
   height: 100vh;
   overflow-y: auto;
+  overflow: hidden;
 
   padding: 48px 40px;
   background-color: $secondary-text-color;
   z-index: 999;
 
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: transform $anim;
 }
 
