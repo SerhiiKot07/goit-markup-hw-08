@@ -1,7 +1,13 @@
 .portfolio-btn__list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 15px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    width: 400px;
+  }
 
   @media screen and (min-width: 768px) {
     justify-content: center;
@@ -13,9 +19,9 @@
 }
 
 
-.portfolio-btn__item:not(:last-child) {
-  margin-right: 8px;
-  }
+// .portfolio-btn__item:not(:last-child) {
+//   margin-right: 8px;
+//   }
 
 .portfolio-btn {
   font-family: inherit;

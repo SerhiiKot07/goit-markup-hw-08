@@ -27,12 +27,16 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  flex-grow: 2;
 }
 
 .project__link {
   position: relative;
   overflow: hidden;
   transition: box-shadow $anim;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project__link:hover,
